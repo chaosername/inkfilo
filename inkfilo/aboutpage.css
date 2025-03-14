@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+    background: linear-gradient(to top, #e2a6d0, white);
+}
+
+header{
+    background-color: #7B506F;
+    padding: 10px 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #4b1f4d;
+}
+
+header .logo img{
+    height: 100px;
+    padding: 0px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s;
+    font-size: 18px;
+}
+
+nav a:hover{
+    color: #DD99BB;
+    transition: 0.2s;
+    transform: scale(1.05);
+    text-decoration: underline;
+    display: inline-block;
+}
+
+.introduction{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 50px;
+}
+
+.intro{
+    width: 65%;
+}
+
+.intro h1{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #1F1A38;
+}
+
+.intro p{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 20px;
+    color: #1b1715d7;
+}
+
+.intro h2{
+    font-size: 24px;
+    margin-top: 30px;
+    color: #6a2c70;
+}
+
+.building{
+    width: 100%;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    object-fit: cover;
+    margin-top: 40px;
+}
+
+.members{
+    width: 35%;
+}
+
+.members h2{
+    font-size: 24px;
+    color: #6a2c70;
+    margin-bottom: 20px;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.card:hover{
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.01);
+}
+
+.card img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.info h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.info p{
+    font-size: 16px;
+}
+
+footer{
+    background-color: #7B506F;
+    color: white;
+    text-align: center;
+    padding: 30px 50px;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 4px solid #4b1f4d;
+}
+
+footer p{
+    font-size: 16px;
+    color: #0f0f0f65;
+}
+
+footer .socials{
+    display: flex;
+    gap: 20px;
+}
+
+footer .socials img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+footer .socials img:hover{
+    transform: scale(1.07);
+}
+
+@media (max-width: 885px){
+    .info h3{
+        font-size: 15px;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+    
+    .info p{
+        font-size: 10px;
+    }
+
+    .card img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .intro h1{
+        font-size: 25px;
+    }
+    
+    .intro p{
+        font-size: 10px;
+        line-height: 1.5;
+        margin-top: 20px;
+        color: #1b1715d7;
+    }
+    
+    .intro h2{
+        font-size: 15px;
+        margin-top: 30px;
+        color: #6a2c70;
+    }
+
+    .card{
+        margin-bottom: 10px;
+    }
+
+    nav a{
+        font-size: 15px;
+    }
+
+    header{
+        background-color: #7B506F;
+        padding: 5px 10px;
+        color: white;
+    }
+}
+
+@media (max-width: 560px){
+    .card{
+        padding: 15px;
+        width: 140px;
+    }
+
+    .intro h1{
+        font-size: 20px;
+    }
+    
+    .intro p{
+        font-size: 10px;
+        line-height: 1;
+    }
+    
+    .intro h2{
+        font-size: 15px;
+        margin-top: 30px;
+        color: #6a2c70;
+    }
+
+    .members h2{
+        font-size: 15px;
+        color: #6a2c70;
+        margin-bottom: 15px;
+    }
+
+    .info h3{
+        font-size: 10px;
+    }
+    
+    .info p{
+        font-size: 7px;
+    }
+
+    .card img{
+        width: 40px;
+        height: 40px;
+    }
+
+    header{
+        background-color: #7B506F;
+        padding: 5px 20px;
+        color: white;
+        height: 100px;
+    }
+
+    header .logo img{
+        height: 70px;
+        padding: 0px;
+    }
+
+    nav ul{
+        list-style: none;
+        display: flex;
+        gap: 15px;
+    }
+    
+    nav a{
+        text-decoration: none;
+        color: white;
+        transition: color 0.2s;
+        font-size: 10px;
+    }
+}
